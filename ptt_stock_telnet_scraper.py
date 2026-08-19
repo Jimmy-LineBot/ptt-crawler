@@ -247,8 +247,7 @@ def main():
         pass
 
     if not articles:
-        print("
-沒有抓到任何符合日期的文章。")
+        print("沒有抓到任何符合日期的文章。")
         return
 
     articles.sort(key=lambda p: get_post_date(p) or datetime.date.min)
